@@ -1,0 +1,30 @@
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*.class
+
+# Virtual Environment
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Documentation
+README.md
+
+# Tests
+tests/
+
+# Misc
+.DS_Store
+*.tmp
+*.bak
+
