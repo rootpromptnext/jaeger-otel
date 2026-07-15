@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flask-otel
+  namespace: observability
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: flask-otel
+  template:
+    metadata:
+      labels:
+        app: flask-otel
+    spec:
+      containers:
+      - name: flask-otel
+        image: flask-otel:v1
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 5000
+        env:
+        - name: OTEL_EXPORTER_OTLP_ENDPOINT
+          value: http://jaeger.observability.svc.cluster.local:4318/v1/traces
+
