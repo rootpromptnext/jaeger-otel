@@ -64,4 +64,3 @@ docker run -p 5000:5000 \
 - Export traces via OTLP
 - Run locally, in Docker, and in Kubernetes
 - Visualize distributed traces in Jaeger
-```
