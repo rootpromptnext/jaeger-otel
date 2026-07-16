@@ -56,7 +56,7 @@ docker run -p 5000:5000 \
 
 ## View Traces
 - Jaeger UI: `http://<VM-Public-IP>:30686`
-- Services: `python-flask-demo`
+- Services: `flask-jaeger-otel`
 - Endpoints: `/`, `/hello`, `/error`
 
 ##What You Learn

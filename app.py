@@ -16,7 +16,7 @@ otlp_endpoint = os.getenv(
     "http://localhost:4318/v1/traces"   # default fallback
 )
 
-resource = Resource.create({"service.name": "python-flask-demo"})
+resource = Resource.create({"service.name": "flask-jaeger-otel"})
 provider = TracerProvider(resource=resource)
 trace.set_tracer_provider(provider)
 
